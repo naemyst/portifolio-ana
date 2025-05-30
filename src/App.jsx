@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { LightBulbIcon, ChatBubbleLeftRightIcon, UserGroupIcon } from '@heroicons/react/24/outline'
+import { LightBulbIcon, ChatBubbleLeftRightIcon, UserGroupIcon, LanguageIcon, RocketLaunchIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 import { FaLinkedin } from 'react-icons/fa'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -87,14 +87,13 @@ function App() {
         </div>
       </section>      {/* Main Qualities Section */}
       <section id="qualities" className="py-5">
-        <div className="container">          <h2 className="display-5 fw-bold text-center mb-5 text-white">Principais Qualidades</h2>
-          <div className="row justify-content-center">
-            <div className="col-12 col-md-4 col-lg-3">              <div className="animate-on-scroll quality-sphere">
+        <div className="container">          <h2 className="display-5 fw-bold text-center mb-5 text-white">Principais Qualidades</h2>          <div className="row justify-content-center">
+            <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">              <div className="animate-on-scroll quality-sphere">
                 <UserGroupIcon className="quality-icon" />
                 <h3 className="fs-4 fw-semibold text-white">Espírito de Liderança</h3>
               </div>
             </div>
-            <div className="col-12 col-md-4 col-lg-3">
+            <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
               <div className="animate-on-scroll quality-sphere">
                 <ChatBubbleLeftRightIcon className="quality-icon" />
                 <h3 className="fs-4 fw-semibold text-white">Ótima Comunicação</h3>
