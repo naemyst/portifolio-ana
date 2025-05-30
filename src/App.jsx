@@ -62,9 +62,8 @@ function App() {
                 animate={{ opacity: 1, x: 0 }}                transition={{ duration: 0.5 }}
                 className="text-center"
               >
-                <div className="d-flex flex-column align-items-center">
-                  <img
-                    src="/profile-photo.jpg"
+                <div className="d-flex flex-column align-items-center">                  <img
+                    src="./profile-photo.jpg"
                     alt="Ana Emilly Marques"
                     className="img-fluid shadow"
                   style={{ 
