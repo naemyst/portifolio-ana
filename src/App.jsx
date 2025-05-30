@@ -63,7 +63,7 @@ function App() {
                 className="text-center"
               >
                 <div className="d-flex flex-column align-items-center">                  <img
-                    src="./profile-photo.jpg"
+                    src={`${import.meta.env.BASE_URL}foto-portifolio02.jpg`}
                     alt="Ana Emilly Marques"
                     className="img-fluid shadow"
                   style={{ 
