@@ -10,6 +10,50 @@
   --bs-muted: #c0c0c0;
 }
 
+.experience-icon {
+  width: 52px;
+  height: 52px;
+  color: var(--bs-primary);
+  margin: 0.75rem auto;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.experience-content {
+  position: relative;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.experience-description {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.experience-card:hover .experience-icon {
+  opacity: 0;
+  transform: translate(-50%, -10px);
+  visibility: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -59,20 +103,47 @@ body {
 }
 
 .experience-card {
+  background: rgba(0, 168, 232, 0.05);
+  border-radius: 10px;
   padding: 2rem;
-  border-radius: 15px;
-  background-color: rgba(11, 57, 84, 0.1);
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
   min-height: 200px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid rgba(0, 168, 232, 0.1);
 }
 
 .experience-card:hover {
-  background-color: rgba(11, 57, 84, 0.2);
+  background: rgba(0, 168, 232, 0.15);
   transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 168, 232, 0.15);
+  border-color: rgba(0, 168, 232, 0.2);
+}
+
+.experience-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.experience-description {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.experience-card:hover .experience-description {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .animate-on-scroll {

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { LightBulbIcon, ChatBubbleLeftRightIcon, UserGroupIcon, LanguageIcon, RocketLaunchIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
+import { LightBulbIcon, ChatBubbleLeftRightIcon, UserGroupIcon, LanguageIcon, RocketLaunchIcon, HandRaisedIcon, PresentationChartBarIcon, CodeBracketIcon, DocumentTextIcon } from '@heroicons/react/24/outline'
 import { FaLinkedin } from 'react-icons/fa'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -63,13 +63,13 @@ function App() {
                 className="text-center"
               >
                 <div className="d-flex flex-column align-items-center">                  <img
-                    src={`${import.meta.env.BASE_URL}foto-portifolio02.jpg`}
+                    src={`${import.meta.env.BASE_URL}fotoprincipal01.jpg`}
                     alt="Ana Emilly Marques"
                     className="img-fluid shadow"
                   style={{ 
                     maxHeight: '70vh', 
                     objectFit: 'cover',
-                    objectPosition: 'center 10%',
+                    objectPosition: 'center',
                     width: '400px',
                     height: '400px',
                     borderRadius: '100%'                  }}
@@ -162,26 +162,91 @@ function App() {
       <section id="experience" className="py-5">
         <div className="container">          <h2 className="display-5 fw-bold text-center mb-5 text-white">Experiência</h2>
           <div className="row justify-content-center">
+            <div className="col-12 col-md-4 mb-4">              <div className="experience-card animate-on-scroll">
+                <div className="text-center">
+                  <h3 className="fw-semibold text-white">Palestras e Apresentações</h3>
+                  <div className="experience-content">
+                    <PresentationChartBarIcon className="experience-icon" />
+                    <div className="experience-description">
+                      <p className="text-light mb-0">
+                        Experiência em liderar discussões e apresentar ideias em público, desenvolvendo habilidades de comunicação e engajamento com diferentes audiências.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>            <div className="col-12 col-md-4 mb-4">
+              <div className="experience-card animate-on-scroll">
+                <div className="text-center">
+                  <h3 className="fw-semibold text-white">2 Formações em programação</h3>
+                  <div className="experience-content">
+                    <CodeBracketIcon className="experience-icon" />
+                    <div className="experience-description">
+                      <p className="text-light mb-0">
+                        Formação em desenvolvimento web e programação, incluindo experiência com JavaScript, React e outras tecnologias modernas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>            <div className="col-12 col-md-4 mb-4">
+              <div className="experience-card animate-on-scroll">
+                <div className="text-center">
+                  <h3 className="fw-semibold text-white">Criação e edição de textos</h3>
+                  <div className="experience-content">
+                    <DocumentTextIcon className="experience-icon" />
+                    <div className="experience-description">
+                      <p className="text-light mb-0">
+                        Experiência em criação e edição de conteúdo escrito, desenvolvendo habilidades de comunicação escrita e adaptação de linguagem para diferentes públicos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row justify-content-center">
             <div className="col-12 col-md-4 mb-4">
               <div className="experience-card animate-on-scroll">
                 <div className="text-center">
-                  <h3 className="fs-4 fw-semibold mb-3 text-white">Experiência 1</h3>
-                  <p className="text-light mb-0">Descrição</p>
+                  <h3 className="fw-semibold text-white">Espírito de Liderança</h3>
+                  <div className="experience-content">
+                    <UserGroupIcon className="experience-icon" />
+                    <div className="experience-description">
+                      <p className="text-light mb-0">
+                        Capacidade natural de liderar e inspirar equipes, promovendo um ambiente colaborativo e alcançando resultados expressivos através do trabalho em conjunto.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="col-12 col-md-4 mb-4">
               <div className="experience-card animate-on-scroll">
-                <div className="text-center">                  <h3 className="fs-4 fw-semibold mb-3 text-white">Experiência 2</h3>
-                  <p className="text-light mb-0">Descrição</p>
+                <div className="text-center">                  <h3 className="fw-semibold text-white">Inglês Fluente</h3>
+                  <div className="experience-content">
+                    <LanguageIcon className="experience-icon" />
+                    <div className="experience-description">
+                      <p className="text-light mb-0">
+                        Proficiência avançada em inglês (B2), com habilidade para comunicação fluente, leitura técnica e produção de conteúdo, permitindo interação efetiva em ambientes internacionais.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="col-12 col-md-4 mb-4">
               <div className="experience-card animate-on-scroll">
                 <div className="text-center">
-                  <h3 className="fs-4 fw-semibold mb-3 text-white">Experiência 3</h3>
-                  <p className="text-light mb-0">Descrição</p>
+                  <h3 className="fw-semibold text-white">Pensamento Criativo</h3>
+                  <div className="experience-content">
+                    <LightBulbIcon className="experience-icon" />
+                    <div className="experience-description">
+                      <p className="text-light mb-0">
+                        Capacidade de pensar de forma inovadora e criativa, encontrando soluções originais para desafios e trazendo novas perspectivas para projetos e iniciativas.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
