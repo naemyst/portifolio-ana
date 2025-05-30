@@ -134,9 +134,27 @@ function App() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center">              <h2 className="display-5 fw-bold mb-4 text-white">Sobre Ana Emilly</h2>
-              <p className="fs-5 animate-on-scroll text-light">
-                [Sua biografia virá aqui. Escreva sobre sua formação, experiência e o que te motiva profissionalmente.]
-              </p>
+              <div className="mb-5">
+                <p className="fs-6 animate-on-scroll text-light fst-italic mb-4 text-primary">
+                  "Quem não é visto, não é lembrado."
+                </p>
+              </div>
+              <div className="row justify-content-center">
+                <div className="col-lg-11">
+                  <p className="fs-7 animate-on-scroll text-light mb-4 lh-lg">
+                    Sou uma jovem de 17 anos que desde os 7 segue à risca essa frase. Nunca houve um momento em que tenham precisado de um voluntário e eu não tenha sido a primeira a levantar a mão. Sabendo de tudo, ou não.
+                  </p>
+                  <p className="fs-7 animate-on-scroll text-light mb-4 lh-lg">
+                    Sou apaixonada por comunicação e tudo o que engloba expressar melhor minhas ideias e opiniões. Estando muito familiar com posições de liderança, uso da minha facilidade em comunicar necessidades para ajudar aqueles que não podem defender os próprios ideais.
+                  </p>
+                  <p className="fs-7 animate-on-scroll text-light mb-4 lh-lg">
+                    Além da escrita, leitura e outros hobbies, meus estudos focam em programação, estudo de línguas estrangeiras e também na área de técnico em telecomunicações.
+                  </p>
+                  <p className="fs-7 animate-on-scroll text-light mb-4 lh-lg">
+                    Meu maior objetivo de vida é avançar para além do que penso ser bom e chegar em um nível de vida acima das expectativas, algo que irei conquistar através dos estudos e foco em construir um futuro ideal para mim.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
