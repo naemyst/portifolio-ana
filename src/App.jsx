@@ -26,16 +26,20 @@ function App() {
   }, [])
   return (
     <div style={{ backgroundColor: 'var(--bs-dark)' }}>
-      {/* Navigation Menu */}
-      <nav className="position-fixed w-100" style={{ 
+      {/* Navigation Menu */}      <nav className="position-fixed w-100" style={{ 
         backgroundColor: 'rgba(26, 26, 26, 0.9)',
         backdropFilter: 'blur(5px)',
         borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
         zIndex: 1000
       }}>
-        <div className="container">          <div className="d-flex justify-content-end py-3">            <a href="#qualities" className="text-decoration-none mx-3 text-white-50 hover-bright">Qualidades</a>
-            <a href="#about" className="text-decoration-none mx-3 text-white-50 hover-bright">Sobre</a>
-            <a href="#experience" className="text-decoration-none mx-3 text-white-50 hover-bright">Experiência</a>
+        <div className="container">          <div className="d-flex justify-content-between align-items-center py-2">            <div className="text-white fs-4" style={{ 
+              fontFamily: "'Lato', sans-serif",
+              letterSpacing: '0.2em',
+              fontWeight: 300
+            }}>Portfólio</div>
+            <div className="d-flex"><a href="#qualities" className="text-decoration-none mx-3 text-white-50 hover-bright">Qualidades</a>
+            <a href="#about" className="text-decoration-none mx-3 text-white-50 hover-bright">Sobre</a>            <a href="#experience" className="text-decoration-none mx-3 text-white-50 hover-bright">Experiência</a>
+            </div>
           </div>
         </div>
       </nav>
