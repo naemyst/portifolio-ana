@@ -102,7 +102,26 @@ function App() {
             <div className="col-12 col-md-4 col-lg-3">
               <div className="animate-on-scroll quality-sphere">
                 <LightBulbIcon className="quality-icon" />
-                <h3 className="fs-4 fw-semibold text-white">Criatividade</h3>
+                <h3 className="fs-4 fw-semibold text-white">Criatividade</h3>              </div>
+            </div>
+          </div>
+          <div className="row justify-content-center mt-5">
+            <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+              <div className="animate-on-scroll quality-sphere">
+                <LanguageIcon className="quality-icon" />
+                <h3 className="fs-4 fw-semibold text-white">Inglês B2</h3>
+              </div>
+            </div>
+            <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+              <div className="animate-on-scroll quality-sphere">
+                <RocketLaunchIcon className="quality-icon" />
+                <h3 className="fs-4 fw-semibold text-white">Proatividade</h3>
+              </div>
+            </div>
+            <div className="col-12 col-md-4 col-lg-3">
+              <div className="animate-on-scroll quality-sphere">
+                <HandRaisedIcon className="quality-icon" />
+                <h3 className="fs-4 fw-semibold text-white">Colaboração</h3>
               </div>
             </div>
           </div>
